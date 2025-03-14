@@ -1,0 +1,67 @@
+$default-background-color: #171616;
+$text-color: #fff;
+$defualt-border-radius: 1.5vw;
+//Import pixel font
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=VT323&display=swap');
+$command-prompt-font: 'VT323', monospace;
+//Body styles
+body {
+    background-color: $default-background-color;
+    margin: 0%;//Remove default margin
+    padding: 0%;//Remove default padding
+}
+
+
+//Navbar styles 
+.navbar{
+    margin: 0.3rem 0 2rem 2rem;
+    position: fixed ;
+    background-color: $default-background-color;
+    width: 90vw;
+    height: 3rem;
+    border-style: solid; 
+    border-radius: $defualt-border-radius;
+    border-color: $text-color;
+    border-width: 0.2rem;
+    padding: 1rem 0 0 1rem;
+    //align-items: center;
+    //Unordered list style
+    > ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        font-weight: normal;
+        font-size: 2.5vw;
+        font-family: $command-prompt-font;
+        margin: 0%;
+        padding: 0%;
+        list-style-type: none;
+        //List item styles
+        > li{
+            //Whn any element is hovered on the navbar
+            :hover{
+                color: #00FF00;
+                text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00; /* Efecto de brillo */
+
+            }
+            //A tag styles
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+
+    }
+}
+
+.big-container{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    >h1,h2{
+        font-family:'Lucida Sans';
+        color: $text-color;
+    }
+}
