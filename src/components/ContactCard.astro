@@ -1,0 +1,42 @@
+---
+import MailIcon from "C:/Users/Johan/Documents/GitHub/web-portfolio/PORTFOLIO/src/assets/mail.png";
+import PhoneIcon from "C:/Users/Johan/Documents/GitHub/web-portfolio/PORTFOLIO/src/assets/phone.png";
+import GithubIcon from "C:/Users/Johan/Documents/GitHub/web-portfolio/PORTFOLIO/src/assets/github-brands-solid.svg";
+import LinkedinIcon from "C:/Users/Johan/Documents/GitHub/web-portfolio/PORTFOLIO/src/assets/linkedin-brands.svg";
+import CVIcon from "C:/Users/Johan/Documents/GitHub/web-portfolio/PORTFOLIO/src/assets/file-user.svg";
+---
+
+<div class="contact-card">
+    <div class="photo-container">
+        <h1 class="title-text">Contact info</h1>
+       <!--  <img src="../src/assets/profile.png">-->
+    </div>  
+    <div class="mail-container">
+        <img src={MailIcon.src} alt="mail-icon"/>
+        <p class="mail-text">johanvibarra7@gmail.com</p>
+    </div>
+    <div class="phone-container">
+        <img src={PhoneIcon.src} alt="phone-icon"/>
+        <p class="phone-text">+(52) 449 585 94 72 </p>
+    </div>
+
+    <div class="extra-grid">
+        <a href="https://github.com/HanjoBulKing7" id="github-icon" class="grid-element"
+        target="_blank"
+        rel="noopener noreferrer">
+            <img src={GithubIcon.src} />
+        </a>
+        <a href="https://www.linkedin.com/in/johanvillalpando7/" id="linkedin-icon" 
+        class="grid-element"
+        target="_blank"
+        rel="noopener noreferrer">
+            <img src={LinkedinIcon.src} />
+        </a>
+        <a id="cv-icon" class="grid-element" href="../src/files/JOHANCV.pdf" 
+         download="JohanYahirVillalpandoIbarraCV.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+            <img src={CVIcon.src} />
+        </a>
+    </div>
+</div>
